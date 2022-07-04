@@ -1,24 +1,49 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+//style
+import './App.module.sass';
+
+//components
+import { Navbar } from './components/Navbar/index';
+import { Banner } from './components/banner/Banner';
+import { Footer } from './components/Footer/index';
+import { SectionLight } from './components/Section_Light/index';
+import { SectionDark } from './components/Section_dark';
+import { ProjectComponent } from './components/ProjectsComponent';
+import { TeamComponent } from './components/Team';
+import { Testimonial } from './components/Testimonial';
+import { PriceComponent } from './components/Price';
+import { Premium } from './components/Premium';
+import { FactsComponent } from './components/Facts';
+import { ContactComponent } from './components/Contact';
+import { MapComponent } from './components/Map';
+import { Companys } from './components/Companies';
+
+
+
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <div>
+
+      <Navbar />
+      <Banner />
+      <SectionLight />
+      <SectionDark />
+      <ProjectComponent />
+      <TeamComponent />
+      <Testimonial />
+      <Companys />
+      <PriceComponent />
+      <Premium />
+      <FactsComponent />
+      <ContactComponent />
+      <MapComponent />
+      <Footer />
+
     </div>
   );
 }
